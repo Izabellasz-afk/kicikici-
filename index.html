@@ -3,37 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Administrator – Kicikici</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            text-align: center;
+        }
+
+        header {
+            background-color: #f48fb1;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #000;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        img {
+            max-width: 300px;
+            border-radius: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
 <header>
     <h1>Kicikici 🐾</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Strona główna</a></li>
-            <li><a href="porady.html">Porady</a></li>
-            <li><a href="ciekawostki.html">Ciekawostki</a></li>
-            <li><a href="galeria.html">Śmieszne koty</a></li>
-            <li><a href="administrator.html">Administrator</a></li>
-        </ul>
-    </nav>
+    <p>Panel administratora</p>
 </header>
 
-<main style="text-align:center; padding:30px;">
-    <h2>Administrator strony</h2>
+<nav>
+    <a href="index.html">Strona główna</a>
+    <a href="porady.html">Porady</a>
+    <a href="ciekawostki.html">Ciekawostki</a>
+</nav>
 
-    <img 
-        src="img/administrator.jpg" 
-        alt="Administrator strony"
-        style="max-width:300px; border-radius:15px; margin-top:20px;"
-    >
+<main>
+    <h2>Administrator</h2>
 
-    <p style="margin-top:20px;">
-        Właściciel i administrator strony Kicikici 🐱
-    </p>
+    <img src="img/administrator.jpg" alt="Administrator">
 </main>
 
 </body>
 </html>
-
