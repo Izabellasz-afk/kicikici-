@@ -5,87 +5,65 @@
 <title>Kicikici – Galeria</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fff0f5;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body{
+    font-family:'Quicksand',sans-serif;
+    background:white;
+    margin:0;
+    padding:24px;
 }
 
-header {
-    background: #ffb6c1;
-    padding: 20px;
+h1{color:#8338ec}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:16px;
 }
 
-header h1 {
-    margin: 0;
+img{
+    width:100%;
+    border-radius:18px;
+    transition:.3s;
 }
 
-nav {
-    background: #333;
-    padding: 10px;
+img:hover{
+    transform:scale(1.08) rotate(1deg);
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px;
-}
-
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.galeria img {
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+a{
+    color:#8338ec;
+    font-weight:600;
+    text-decoration:none;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Kicikici 🐾</h1>
-    <p>Galeria kotów</p>
-</header>
+<h1>Śmieszne koty 😹</h1>
 
-<nav>
-    <a href="index.html">Strona główna</a>
-    <a href="porady.html">Porady</a>
-    <a href="ciekawostki.html">Ciekawostki</a>
-    <a href="galeria.html">Śmieszne koty</a>
-    <a href="administrator.html">Administrator</a>
-</nav>
+<div class="grid">
+  <!-- STARE GIFY -->
+  <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Kot">
+  <img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" alt="Kot">
+  <img src="https://media.giphy.com/media/13borq7Zo2kulO/giphy.gif" alt="Kot">
+  <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="Kot">
 
-<main>
-    <h2>Nasze kociaki 😺</h2>
+  <!-- STARE KOTY -->
+  <img src="https://placekitten.com/401/401" alt="Kot">
+  <img src="https://placekitten.com/402/401" alt="Kot">
+  <img src="https://placekitten.com/403/401" alt="Kot">
+  <img src="https://placekitten.com/404/401" alt="Kot">
 
-    <div class="galeria">
-        <!-- KOTY KTÓRE BYŁY WCZEŚNIEJ -->
-        <img src="img/kot1.jpg" alt="Kot 1">
-        <img src="img/kot2.jpg" alt="Kot 2">
+  <!-- TWOJE KOTY (LOKALNE) -->
+  <img src="img/kot1.jpg" alt="Śmieszny kot">
+  <img src="img/kot2.jpg" alt="Śmieszny kot">
+</div>
 
-        <!-- TWOJE KOTY -->
-        <img src="img/kotek.jpg" alt="Kotek">
-        <img src="img/administrator.jpg" alt="Administrator">
-    </div>
-</main>
+<br><br>
+<a href="index.html">⬅ Wróć na stronę główną</a>
 
 </body>
 </html>
-
