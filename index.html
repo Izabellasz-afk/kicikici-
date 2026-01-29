@@ -1,130 +1,114 @@
-<!-- ===================== index.html ===================== -->
 <!DOCTYPE html>
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>Kicikici 🐱</title>
+<title>Kicikici</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap');
-*{box-sizing:border-box}
-body{margin:0;font-family:'Quicksand',sans-serif;background:linear-gradient(180deg,#fff0f6,#ffffff)}
-header{background:#ffafcc;padding:24px;text-align:center}
-header h1{font-family:'Pacifico',cursive;font-size:56px;margin:0}
-nav{background:#333;padding:12px;text-align:center;position:sticky;top:0}
-nav a{color:#fff;margin:0 14px;text-decoration:none;font-weight:600}
-nav a:hover{color:#ffd6e0}
-.container{max-width:1000px;margin:auto;padding:24px}
-.hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center}
-.hero p{font-size:18px}
-.kitty-walk{position:fixed;bottom:40px;left:-120px;width:100px;animation:walk 18s linear infinite;pointer-events:none}
-@keyframes walk{0%{left:-120px}100%{left:110%}}
-.jump span{display:inline-block;animation:jump 2s ease-in-out infinite}
-.jump span:nth-child(odd){animation-delay:.15s}
-@keyframes jump{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
-footer{position:fixed;right:16px;bottom:12px;background:#333;color:#fff;padding:10px 14px;border-radius:14px;font-family:'Pacifico',cursive;opacity:.85}
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", cursive;
+  background: #ffe6f0;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+header {
+  background: #ff99cc;
+  padding: 20px;
+}
+
+nav {
+  background: #ff66b2;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: #ff3385;
+}
+
+main {
+  padding: 30px;
+}
+
+.koty img {
+  width: 260px;
+  border-radius: 20px;
+  margin: 15px;
+}
+
+/* ANIMOWANY KOT */
+.kot-walk {
+  position: fixed;
+  bottom: 10px;
+  left: -150px;
+  width: 120px;
+  animation: walk 18s linear infinite;
+}
+
+@keyframes walk {
+  0% { left: -150px; }
+  100% { left: 110%; }
+}
+
+footer {
+  background: #ff99cc;
+  padding: 10px;
+  font-size: 14px;
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<h1 class="jump"><span>K</span><span>i</span><span>c</span><span>i</span><span>k</span><span>i</span><span>c</span><span>i</span> 🐾</h1>
-<p>Najbardziej słodka strona o kotach</p>
+  <h1>🐾 Kicikici 🐾</h1>
+  <p>Najbardziej słodka strona o kotach</p>
 </header>
+
 <nav>
-<a href="index.html">Strona główna</a>
-<a href="porady.html">Porady</a>
-<a href="ciekawostki.html">Ciekawostki</a>
-<a href="galeria.html">Śmieszne koty</a>
+  <ul>
+    <li><a href="index.html">Strona główna</a></li>
+    <li><a href="porady.html">Porady</a></li>
+    <li><a href="ciekawostki.html">Ciekawostki</a></li>
+    <li><a href="galeria.html">Śmieszne koty</a></li>
+    <li><a href="administrator.html">Administrator</a></li>
+  </ul>
 </nav>
-<div class="container">
-<div class="hero">
-<p>Koty są miękkie, zabawne i totalnie rządzą internetem. Przewijaj, klikaj i ciesz się kicikici 😺</p>
-<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Skaczący kot">
-</div>
-</div>
-<img class="kitty-walk" src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="Kot spaceruje">
-<footer>Izabella Szenknecht</footer>
-</body>
-</html>
 
-<!-- ===================== porady.html ===================== -->
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-<meta charset="UTF-8">
-<title>Kicikici – Porady</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
-body{font-family:'Quicksand',sans-serif;background:#fff0f6;margin:0;padding:24px}
-h1{color:#ff5d8f}
-.card{background:#fff;border-radius:16px;padding:20px;margin-bottom:16px;box-shadow:0 6px 18px rgba(0,0,0,.1)}
-img{max-width:100%;border-radius:14px}
-a{color:#ff5d8f;text-decoration:none;font-weight:600}
-</style>
-</head>
-<body>
-<h1>Porady dla kociarzy 🐾</h1>
-<div class="card">
-<ul>
-<li>Codziennie baw się z kotem</li>
-<li>Dawaj świeżą wodę</li>
-<li>Zapewnij drapak</li>
-<li>Szanuj kocią przestrzeń</li>
-</ul>
-<img src="https://placekitten.com/600/300" alt="Kot odpoczywa">
-</div>
-<a href="index.html">⬅ Wróć</a>
-</body>
-</html>
+<main>
+  <h2>Witamy w świecie kotów 😺</h2>
+  <p>Koty są miękkie, śmieszne i absolutnie rządzą internetem.</p>
 
-<!-- ===================== ciekawostki.html ===================== -->
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-<meta charset="UTF-8">
-<title>Kicikici – Ciekawostki</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
-body{font-family:'Quicksand',sans-serif;background:#f1f7ff;margin:0;padding:24px}
-h1{color:#3a86ff}
-.fact{background:#fff;border-radius:16px;padding:18px;margin:12px 0;animation:fade .8s ease}
-@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1}}
-a{color:#3a86ff;text-decoration:none;font-weight:600}
-</style>
-</head>
-<body>
-<h1>Ciekawostki 😺</h1>
-<div class="fact">Koty śpią do 18 godzin dziennie</div>
-<div class="fact">Mruczenie uspokaja ludzi</div>
-<div class="fact">Każdy nosek kota jest unikalny</div>
-<a href="index.html">⬅ Wróć</a>
-</body>
-</html>
+  <div class="koty">
+    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Śmieszny kot">
+    <img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" alt="Kot">
+    <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="Kot">
+  </div>
+</main>
 
-<!-- ===================== galeria.html ===================== -->
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-<meta charset="UTF-8">
-<title>Kicikici – Galeria</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
-body{font-family:'Quicksand',sans-serif;background:#fff;margin:0;padding:24px}
-h1{color:#8338ec}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-img{width:100%;border-radius:16px;transition:.3s}
-img:hover{transform:scale(1.05)}
-a{color:#8338ec;text-decoration:none;font-weight:600}
-</style>
-</head>
-<body>
-<h1>Śmieszne koty 😹</h1>
-<div class="grid">
-<img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif">
-<img src="https://media.giphy.com/media/13borq7Zo2kulO/giphy.gif">
-<img src="https://placekitten.com/401/401">
-<img src="https://placekitten.com/402/401">
-</div>
-<br>
-<a href="index.html">⬅ Wróć</a>
+<!-- KOT SPACERUJĄCY -->
+<img class="kot-walk" src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" alt="Kot spaceruje">
+
+<footer>
+  Izabella Szenknecht
+</footer>
+
 </body>
 </html>
